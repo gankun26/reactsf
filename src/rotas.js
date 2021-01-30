@@ -1,5 +1,4 @@
 import {Switch, Route} from 'react-router-dom';
-
 import Produtos from './Pages/Produtos';
 import Pedidos from './Pages/Pedidos';
 

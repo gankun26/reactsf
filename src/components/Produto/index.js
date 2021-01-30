@@ -1,33 +1,33 @@
-import  './produto.css'
 
 
 export default function Produto(props) {
 
-    function show_info(event) {
+    function show_info(event){
         const target = event.currentTarget;
-        const elemento = target.getElementsByTagName("figcaption")[0];
+        const elemento = target.getElementsByTagName("figcaption")[0]
         elemento.style.visibility = "initial";
     }
 
-    function hide_info(event) {
+    function hide_info(event){
         const target = event.currentTarget;
-        const elemento = target.getElementsByTagName("figcaption")[0];
+        const elemento = target.getElementsByTagName("figcaption")[0]
         elemento.style.visibility = "hidden";
     }
 
     return (
-        <figure ClassName={props.categoria + "produto col-lg-3 col-md-4 col-sm-6 col-xs-12 mr-auto"} onMouseOver={show_info} onMouseOut={hide_info}>
-            <img src={require (`./img/${props.imagem}`).default} alt="imagem de produtos" />
+        <figure className={props.categoria + " produto col-lg-3 col-md-4 col-sm-6 col-xs-12 mr-auto"} 
+        onMouseOver={show_info} onMouseOut={hide_info}>
+            <img src={require(`./img/${props.imagem}`).default} alt="Imagem de Produtos" />
             <figcaption>
-                <p ClassName="nome-prod">
+                <p className="nome-prod">
                     {props.nome}
                 </p>
-                <p ClassName="precofinal-prod">
+                <p className="precofinal-prod">
                     R$ {props.preco}
                 </p>
             </figcaption>
-        </figure>
+        </figure> 
     )
 }
 
-
+//imagem preferencia jpg ou png 
