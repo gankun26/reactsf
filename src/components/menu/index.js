@@ -15,11 +15,11 @@ import  './Menu.css';
             <Navbar.Collapse id="item menu">
                 <Nav activeKey={Location} className="ml-auto mr-3">
                     <Nav.Item>
-                            <Nav.Link as={Link}  href="/" to="/">Pagina Inicial</Nav.Link>
+                            <Nav.Link as={Link}  href="/pagina_inicial" to="/pagina_inicial">Pagina Inicial</Nav.Link>
                     </Nav.Item>
                    
                     <Nav.Item>
-                            <Nav.Link as={Link}   href="/produtos" to="/produtos">Produtos</Nav.Link>
+                            <Nav.Link as={Link}   href="/" to="/">Produtos</Nav.Link>
                     </Nav.Item>
                     
                     <Nav.Item>
